@@ -1,20 +1,19 @@
-variable "subscription_id" {
-  description = "Azure subscription ID"
+variable "resource_group_name" {
+  description = "Name of the resource group"
   type        = string
 }
 
-variable "client_id" {
-  description = "Service Principal App ID"
+variable "location" {
+  description = "Azure region"
   type        = string
 }
 
-variable "client_secret" {
-  description = "Service Principal secret"
+variable "vnet_name" {
+  description = "Virtual Network name"
   type        = string
-  sensitive   = true
 }
 
-variable "tenant_id" {
-  description = "Azure AD tenant ID"
-  type        = string
+variable "address_space" {
+  description = "VNet address space"
+  type        = list(string)
 }
