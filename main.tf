@@ -23,7 +23,7 @@ provider "azurerm" {
 }
 
 resource "azurerm_resource_group" "rg" {
-  name     = "520-JenkinsTerraformRG"
+  name     = "520-JenkinsTerraformRG1"
   location = "Italy North"
 }
 
